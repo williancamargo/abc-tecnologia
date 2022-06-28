@@ -1,0 +1,55 @@
+.menu { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(94, 131, 42); 
+  /*  Resolvendo o efeito colateral do float */
+  overflow: hidden; 
+}
+/*  Deixando os itens da listas "flutuados "à esquerda ( na prática, ficam lado a lado) */
+.menu li { float: left;}
+.menu a { 
+  color: white;
+  text-decoration: none;
+  padding: 15px 17px ;  
+  display: block;
+}
+.menu a:hover {
+  background-color: white;
+  color: rgb(94, 131, 42);
+}
+.menu li.icone{display: none;}
+
+@media screen and (max-width: 760px) {
+  /* .menu li { float:none;}.menu a {text-align: center  } */
+
+/*  Escondemos os intens do menu */
+.menu li {display:none;}
+/* Exibimos novamente o item/icone Menu */
+.menu li.icone{ 
+  display:block;
+  float: right;
+} 
+/* Regra "fechada"
+    Somente se a lista estiver com as duas
+    classes juntas ao mesmo tempo [menu e aberto]
+    é que as configurações de float e display
+    entrarão */
+.menu.aberto li {
+  float: none;
+  display:inline;
+}
+/* Quando o menu estiver aberto, ele
+    passará a ser a referência de posicionamento
+    do botão (menu ---)  */
+.menu.aberto { position: relative; }
+/* Posicionando o botão do menu
+    à direita [right 0] e acima [top 0], em
+    relação ao menu aberto. */
+.menu.aberto li.icone {
+  position:absolute;
+  right: 0;   top: 0;
+}
+
+
+}

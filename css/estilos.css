@@ -1,0 +1,64 @@
+* { box-sizing: border-box; }
+
+body {
+  background-color:lightgoldenrodyellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*  Reset de espaçamento */
+  margin: 0;  
+}
+
+h1 {
+  background-color: rgb(95, 95, 35);
+  color: white;
+  margin:0;  /* reset */ 
+  padding-left: 15px;
+}
+#imagem-decorativa {
+ height: 450px;
+ background-image: url(../imagens/notebook.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+}
+main {
+  margin:auto;
+  width: 80%;  
+}
+
+footer {
+height: 80px;
+background-color: rgb(95, 95, 35);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Estilos para página de Produtos. */
+.treinamentos section {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: black 0 0 15px;
+  width: 32%; 
+}
+/* DIV que envolve as section */
+.treinamentos {
+  display: flex;    /* linha/ Row */  
+  justify-content: space-between; 
+}
+
+.flutuar-imagem {
+  float: left;
+  margin-right: 10px;  
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Mudando o flex da div treinamentos para o modo coluna  */
+  .treinamentos { flex-direction: column;}
+  /* Fazendo com oa  */
+  .treinamentos section {
+    width: auto;
+    margin-top: 10px;
+  }
+}

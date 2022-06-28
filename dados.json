@@ -1,0 +1,42 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Front-end"
+    },
+    {
+      "id": 2,
+      "titulo": "Programador Back-end"
+    },
+    {
+      "id": 3,
+      "titulo": "Programador Full-stack"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Willian Camargo de Sousa ",
+      "data": "1981-08-31",
+      "telefone": "11986595075",
+      "email": "williancsousa@gmail.com",
+      "vaga": "Programador Front-end",
+      "id": 1
+    },
+    {
+      "nome": "Ana Paula Palmeira de Azevedo Sousa",
+      "data": "1974-09-24",
+      "telefone": "1122222354",
+      "email": "AnaPaulaPalmeira@hotmail.com",
+      "vaga": "Programador Back-end",
+      "id": 2
+    },
+    {
+      "nome": "Vinicius Oliiveira ",
+      "data": "2000-10-20",
+      "telefone": "2222794462",
+      "email": "viniciusoliveira@hotmail.com",
+      "vaga": "Programador Full-stack",
+      "id": 3
+    }
+  ]
+}
